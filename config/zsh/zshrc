@@ -1,0 +1,24 @@
+
+plugins=(
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  thefuck
+  you-should-use
+  )
+
+source $ZSH/oh-my-zsh.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+unalias -m '*'
+source ~/.aliases
+
+bindkey -v
+
+eval "$(thefuck --alias)"
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+

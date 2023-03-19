@@ -1,0 +1,6 @@
+
+--theme="TwoDark"
+
+--paging=never
+
+--map-syntax "*.aliases:Bourne Again Shell (bash)"

@@ -1,0 +1,33 @@
+
+alias python='python3'
+alias vim='nvim'
+alias s='source ~/.zshrc'
+
+alias ls='exa --header --git --icons --oneline --group-directories-first --long --no-permissions --time-style=long-iso --no-user --no-filesize --color=always'
+alias cat='bat'
+alias grep='rg'
+alias c='clear'
+alias yank='pbcopy'
+alias rm='trash'
+alias bbd='brew bundle dump --force --describe'
+
+# Creating directories
+function take {
+  mkdir -p $1
+  cd $1
+}
+
+alias ga='git add'
+alias gc='git commit'
+alias gs='git status'
+alias gpull='git pull'
+alias gpush='git push'
+alias gclone='git clone'
+alias gco='git checkout'
+alias ggraph='git log --all --graph --format=oneline'
+alias gauth='git shortlog -sne --pretty="%an %ae%n%cn %ce" | sort -r'
+
+alias yt='yt-dlp -f bestvideo+bestaudio'
+alias speedtest='speedtest-cli'
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+

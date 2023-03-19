@@ -1,0 +1,42 @@
+# General
+log/
+*.log
+
+# Vim 
+*.swp
+.*.sw[a-z]
+*.un~
+.netrwhist
+
+# LaTeX
+aux/
+*.aux
+*.out
+*.toc
+*.snm
+*.synctex.gz
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
+Desktop.ini
+.AppleDouble
+.LSOverride
+
+# Application specific files
+venv
+node_modules
+.sass-cache
+
+

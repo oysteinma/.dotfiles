@@ -1,0 +1,115 @@
+live_config_reload: true
+
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 150
+    lines: 40
+
+  position:
+    x: 118
+    y: 170
+
+  padding:
+    x: 16
+    y: 16
+
+  dynamic_padding: false
+
+  decorations: buttonless
+
+  opacity: 1.0
+
+  startup_mode: Windowed
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: "Hack Nerd Font Mono"
+    style: Regular
+
+  bold:
+    style: Regular
+
+  italic:
+    style: Regular
+
+  bold_italic:
+    style: Regular
+
+  size: 19.0
+
+  # offset.y : Line spacing
+  # offset.x : Letter spacing
+  offset:
+    x: 0
+    y: 5
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+draw_bold_text_with_bright_colors: false
+
+colors:
+  primary:
+    background: "#0D1116"
+    foreground: "#efefea"
+
+  cursor:
+    text: "#1d1f21"
+    cursor: "#ffffff"
+
+  normal:
+    black: "#000000"
+    red: "#fe5b56"
+    green: "#5af68d"
+    yellow: "#f3f89c"
+    blue: "#57c6fe"
+    magenta: "#fe69c0"
+    cyan: "#9aecfd"
+    white: "#f1f0ef"
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+  save_to_clipboard: true
+
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+
+  vi_mode_style: None
+
+  blink_interval: 500
+
+  blink_timeout: 0
+
+  unfocused_hollow: true
+
+  thickness: 0.15
+
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux new -s default -n main"
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+
+  hide_when_typing: false
+
+debug:
+  render_timer: false
+  persistent_logging: false
+  log_level: Off
+  print_events: false

@@ -1,0 +1,38 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- create:
+    - ~/.config
+
+- clean: ["~"]
+
+- link:
+    ~/.zshrc: config/zsh/zshrc
+    ~/.aliases: config/zsh/aliases
+    ~/.zshenv: config/zsh/zshenv
+    ~/.tmux.conf: config/tmux/tmux.conf
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitignore: config/git/gitignore
+    ~/.config/alacritty:
+      path: config/alacritty
+    ~/.config/nvim:
+      path: config/nvim
+    ~/.config/bat:
+      path: config/bat
+
+- shell:
+    - command: ./scripts/xcode_setup.zsh
+      stdout: true
+      stderr: true
+    - command: ./scripts/brew_setup.zsh
+      stdout: true
+      stderr: true
+    - command: ./scripts/node_setup.zsh
+      stdout: true
+      stderr: true
+  #  -
+  #command: ./scripts/mac_setup.zsh
+  #stdout: true
+  #stderr: true
