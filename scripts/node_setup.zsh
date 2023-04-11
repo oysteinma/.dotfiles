@@ -10,12 +10,11 @@ else
   nvm install "lts/*" --reinstall-packages-from="$(nvm current)"
 fi
 
-# Install Global NPM Packages
-# npm install --global typescript
-# npm install --global expo-cli
-# npm update
+echo 'Install Global NPM Packages'
+npm install -g neovim
+npm install -g yarn
 
-# echo "Global NPM Packages Installed:"
-# npm list --global --depth=0
+echo "Global NPM Packages Installed:"
+npm list -g --depth=0
 
 echo "\n<<< Node Setup Complete >>>\n"
