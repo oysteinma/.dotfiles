@@ -21,4 +21,3 @@ bindkey -v
 eval "$(thefuck --alias)"
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
-

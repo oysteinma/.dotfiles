@@ -4,6 +4,8 @@ alias vim='nvim'
 alias s='source ~/.zshrc'
 
 alias ls='exa --header --git --icons --oneline --group-directories-first --long --no-permissions --time-style=long-iso --no-user --no-filesize --color=always'
+alias sl='ls'
+alias lsa='ls -la'
 alias cat='bat'
 alias grep='rg'
 alias c='clear'
@@ -26,8 +28,8 @@ alias gclone='git clone'
 alias gco='git checkout'
 alias ggraph='git log --all --graph --format=oneline'
 alias gauth='git shortlog -sne --pretty="%an %ae%n%cn %ce" | sort -r'
+alias glog="git log --reverse"
 
 alias yt='yt-dlp -f bestvideo+bestaudio'
 alias speedtest='speedtest-cli'
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
-
