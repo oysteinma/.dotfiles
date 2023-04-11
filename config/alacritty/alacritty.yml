@@ -1,19 +1,19 @@
 live_config_reload: true
 
 env:
-  TERM: xterm-256color
+  TERM: alacritty
 
 window:
   dimensions:
-    columns: 150
+    columns: 160
     lines: 40
 
   position:
-    x: 118
-    y: 170
+    x: 88
+    y: 220
 
   padding:
-    x: 16
+    x: 18
     y: 16
 
   dynamic_padding: false
@@ -42,7 +42,7 @@ font:
   bold_italic:
     style: Regular
 
-  size: 19.0
+  size: 18.0
 
   # offset.y : Line spacing
   # offset.x : Letter spacing
@@ -70,7 +70,7 @@ colors:
     red: "#fe5b56"
     green: "#5af68d"
     yellow: "#f3f89c"
-    blue: "#57c6fe"
+    blue: "#99ECFE"
     magenta: "#fe69c0"
     cyan: "#9aecfd"
     white: "#f1f0ef"
