@@ -2,6 +2,9 @@
     link:
       relink: true
       create: true
+    shell:
+      stdout: true
+      stderr: true
 
 - create:
     - ~/.config
@@ -24,15 +27,6 @@
 
 - shell:
     - command: ./scripts/xcode_setup.zsh
-      stdout: true
-      stderr: true
     - command: ./scripts/brew_setup.zsh
-      stdout: true
-      stderr: true
+    - command: ./scripts/mac_setup.zsh
     - command: ./scripts/node_setup.zsh
-      stdout: true
-      stderr: true
-  #  -
-  #command: ./scripts/mac_setup.zsh
-  #stdout: true
-  #stderr: true
