@@ -32,3 +32,13 @@
 
 [commit]
 	gpgsign = true
+
+[mergetool]
+  keepBackup = false
+[mergetool "nvimdiff"]
+  cmd = "nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'"
+
+[diff]
+  mnemonicPrefix = true
+  renames=true
+  tool = nvimdiff

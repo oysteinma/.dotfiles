@@ -2,7 +2,7 @@
 log/
 *.log
 
-# Vim 
+# Vim
 *.swp
 .*.sw[a-z]
 *.un~
@@ -38,5 +38,3 @@ Desktop.ini
 venv
 node_modules
 .sass-cache
-
-
