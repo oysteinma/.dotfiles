@@ -1,3 +1,15 @@
+tt.
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
 Brewfile.lock.json
 .luarc.json
 packer_compiled.lua
+lazy-lock.json
+pack/
+.neoconf.json
