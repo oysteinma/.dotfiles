@@ -15,9 +15,10 @@
     ~/.zshrc: config/zsh/zshrc
     ~/.aliases: config/zsh/aliases
     ~/.zshenv: config/zsh/zshenv
-    ~/.tmux.conf: config/tmux/tmux.conf
-    ~/.gitconfig: config/git/gitconfig
-    ~/.gitignore: config/git/gitignore
+    ~/.config/tmux:
+      path: config/tmux
+    ~/.config/git:
+      path: config/git
     ~/.config/alacritty:
       path: config/alacritty
     ~/.config/nvim:
