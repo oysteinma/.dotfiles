@@ -5,16 +5,16 @@ env:
 
 window:
   dimensions:
-    columns: 160
+    columns: 145
     lines: 40
 
   position:
-    x: 88
-    y: 220
+    x: 30
+    y: 130
 
   padding:
-    x: 18
-    y: 16
+    x: 15
+    y: 15
 
   dynamic_padding: false
 
@@ -42,7 +42,7 @@ font:
   bold_italic:
     style: Regular
 
-  size: 18.0
+  size: 20
 
   # offset.y : Line spacing
   # offset.x : Letter spacing
