@@ -31,9 +31,9 @@ return {
 							"diff",
 							colored = true,
 							diff_color = {
-								added = { fg = "#98be65" },
-								modified = { fg = "#FFC777" },
-								removed = { fg = "#C53B53" },
+								added = { fg = "#64CE73" },
+								modified = { fg = "#FFAD51" },
+								removed = { fg = "#F24967" },
 							},
 							symbols = {
 								added = " ",

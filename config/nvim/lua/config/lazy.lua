@@ -58,7 +58,8 @@ require("lazy").setup({
 		browser = nil, ---@type string?
 		throttle = 20,
 	},
-	checker = { enabled = true },
+	checker = { enabled = true, notify = false },
+	change_detection = { enabled = true, notify = false },
 	performance = {
 		rtp = {
 			disabled_plugins = {

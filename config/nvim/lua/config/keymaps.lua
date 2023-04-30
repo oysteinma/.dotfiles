@@ -1,5 +1,3 @@
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
-
 -- Netrw
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open netrw" })
 
@@ -33,8 +31,13 @@ vim.keymap.set("n", "<leader>la", "<cmd>:Lazy<cr>", { desc = "Lazy" })
 -- Toggle format on save
 vim.keymap.set("n", "<leader>uf", require("lazyvim.plugins.lsp.format").toggle, { desc = "Toggle format on Save" })
 
+-- Fugitive
+vim.keymap.set("n", "<leader>gs", "<cmd>:top Git<cr>", { desc = "Git status" })
+vim.keymap.set("n", "gu", "<cmd>diffget //2<CR>")
+vim.keymap.set("n", "gh", "<cmd>diffget //3<CR>")
+
 -- Undotree
-vim.keymap.set("n", "<leader>ø", "<cmd>UndotreeToggle<cr>", { desc = "Undotree" })
+vim.keymap.set("n", "<leader>U", "<cmd>UndotreeToggle<cr>", { desc = "Undotree" })
 
 -- Harpoon
 local mark = require("harpoon.mark")

@@ -13,4 +13,5 @@ return {
 	{ "ggandor/leap.nvim", enabled = false },
 	{ "folke/noice.nvim", enabled = false },
 	{ "tpope/vim-repeat", enabled = false },
+	{ "RRethy/vim-illuminate", enabled = false },
 }

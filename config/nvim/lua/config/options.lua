@@ -3,6 +3,7 @@ vim.g.maplocalleader = " "
 
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
+vim.g.loaded_python3_provider = 0
 
 local opt = vim.opt
 
@@ -52,4 +53,4 @@ opt.wildmode = "longest:full,full"
 opt.winminwidth = 5
 opt.wrap = false
 opt.conceallevel = 0
-opt.cursorline = true
+opt.cursorline = false
