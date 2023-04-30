@@ -4,6 +4,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
+tap "mongodb/brew"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Vector graphics library with cross-device output support
@@ -14,16 +15,28 @@ brew "cmatrix"
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
+# Image processing and image analysis library
+brew "leptonica"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Graphics library to dynamically manipulate images
+brew "gd"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
 # Distributed revision control system
 brew "git"
+# Automatic git commit --fixup
+brew "git-absorb"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Image manipulation
+brew "netpbm"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Improved top (interactive process viewer)
@@ -94,6 +107,8 @@ brew "yarn"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# This package contains standard utilities for interacting with MongoDB.
+brew "mongodb/brew/mongodb-database-tools"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # GPU-accelerated terminal emulator
@@ -130,6 +145,8 @@ cask "google-chrome"
 cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Open-source keystroke visualizer
+cask "keycastr"
 # Controls and monitors all fans on Apple computers
 cask "macs-fan-control"
 # Web browser
@@ -168,7 +185,6 @@ mas "DaVinci Resolve", id: 571213070
 mas "Encrypto", id: 935235287
 mas "GarageBand", id: 682658836
 mas "GeoGebra Classic 6", id: 1182481622
-mas "Hand Mirror", id: 1502839586
 mas "Hidden Bar", id: 1452453066
 mas "JSONPeep", id: 1458969831
 mas "Magnet", id: 441258766
