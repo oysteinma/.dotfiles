@@ -2,6 +2,8 @@ return {
 	{
 		"projekt0n/github-nvim-theme",
 		branch = "0.0.x",
+		lazy = false,
+		priority = 1000,
 		config = function()
 			require("github-theme").setup({
 				transparent = true,
