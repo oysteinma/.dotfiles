@@ -13,3 +13,4 @@ packer_compiled.lua
 lazy-lock.json
 pack/
 .neoconf.json
+config/tmux/plugins/
