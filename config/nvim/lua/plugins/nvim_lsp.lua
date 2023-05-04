@@ -20,7 +20,6 @@ return {
 				dartls = {},
 				svelte = {},
 				jdtls = {},
-				marksman = {},
 			},
 			setup = {
 				eslint = function()
