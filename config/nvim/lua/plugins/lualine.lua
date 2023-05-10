@@ -27,21 +27,19 @@ return {
 					lualine_b = {
 						"branch",
 						{ "filename", file_status = false },
+						-- {
+						-- 	"diff",
+						-- 	colored = true,
+						-- 	diff_color = {
+						-- 		added = { fg = "#64CE73" },
+						-- 		modified = { fg = "#FFAD51" },
+						-- 		removed = { fg = "#F24967" },
+						-- 	},
+						-- },
 						{
-							"diff",
-							colored = true,
-							diff_color = {
-								added = { fg = "#64CE73" },
-								modified = { fg = "#FFAD51" },
-								removed = { fg = "#F24967" },
-							},
-							symbols = {
-								added = " ",
-								modified = "柳",
-								removed = " ",
-							},
+							"diagnostics",
+							symbols = { error = " ", warn = " ", info = " " },
 						},
-						"diagnostics",
 					},
 					lualine_c = {},
 					lualine_x = {
