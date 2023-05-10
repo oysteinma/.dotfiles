@@ -25,6 +25,8 @@
       path: config/nvim
     ~/.config/bat:
       path: config/bat
+    ~/.config/atuin:
+      path: config/atuin
 
 - shell:
     - command: ./scripts/xcode_setup.zsh
