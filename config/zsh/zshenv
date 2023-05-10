@@ -11,7 +11,7 @@ export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
 export KEYTIMEOUT=1
 
-. "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 function exists() {
     command -v $1 >/dev/null 2>&1
