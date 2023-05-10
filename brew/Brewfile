@@ -5,6 +5,8 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "mongodb/brew"
+# Improved shell history for zsh and bash
+brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Vector graphics library with cross-device output support
@@ -31,6 +33,8 @@ brew "gd"
 brew "gdk-pixbuf"
 # Distributed revision control system
 brew "git"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2@1.5"
 # Automatic git commit --fixup
 brew "git-absorb"
 # Open source programming language to build simple/reliable/efficient software
@@ -67,6 +71,8 @@ brew "netcat"
 brew "nmap"
 # Manage multiple Node.js versions
 brew "nvm"
+# Draw UML diagrams
+brew "plantuml"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Python package management tool
@@ -87,8 +93,8 @@ brew "speedtest-cli"
 brew "starship"
 # User interface to the TELNET protocol
 brew "telnet"
-# Programmatically correct mistyped console commands
-brew "thefuck"
+# Simplified and community-driven man pages
+brew "tldr"
 # Terminal multiplexer
 brew "tmux"
 # CLI tool that moves files or folder to the trash
@@ -189,7 +195,6 @@ mas "Hidden Bar", id: 1452453066
 mas "JSONPeep", id: 1458969831
 mas "Magnet", id: 441258766
 mas "Notability", id: 360593530
-mas "One Thing", id: 1604176982
 mas "SideNotes", id: 1441958036
 mas "The Unarchiver", id: 425424353
 mas "WhatFont", id: 1437138382
