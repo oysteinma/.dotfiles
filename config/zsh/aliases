@@ -28,7 +28,7 @@ alias gclone='git clone'
 alias gco='git checkout'
 alias ggraph='git log --all --graph --format=oneline'
 alias gauth='git shortlog -sne --pretty="%an %ae%n%cn %ce" | sort -r'
-alias glog="git log --reverse"
+alias glog="git log"
 
 alias yt='yt-dlp -f bestvideo+bestaudio'
 alias speedtest='speedtest-cli'
