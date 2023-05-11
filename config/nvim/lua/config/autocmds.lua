@@ -14,6 +14,11 @@ vim.g.gitblame_message_template = "<author> <date>"
 vim.g.gitblame_message_when_not_committed = ""
 vim.g.gitblame_date_format = "%a %d %b %y"
 
+-- Round border for nvim-tree
+vim.diagnostic.config({
+	float = { border = "rounded" },
+})
+
 -- Disable semantic tokens for LSP
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)

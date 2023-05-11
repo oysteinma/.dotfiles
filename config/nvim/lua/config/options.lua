@@ -15,7 +15,7 @@ opt.smartindent = true
 
 opt.clipboard = "unnamedplus"
 opt.fillchars:append("eob: ")
-opt.completeopt = "menu,menuone,noselect"
+opt.completeopt = ""
 opt.confirm = true
 opt.formatoptions = "jcroqlnt"
 opt.grepformat = "%f:%l:%c:%m"
