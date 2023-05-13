@@ -45,12 +45,14 @@ brew "netpbm"
 brew "graphviz"
 # Improved top (interactive process viewer)
 brew "htop"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 # Network logon cracker which supports many services
 brew "hydra"
 # Featureful UNIX password cracker
 brew "john"
-# Command-line JSON pretty-printer
-brew "jsonpp"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Powerful, lightweight programming language
@@ -73,12 +75,8 @@ brew "nmap"
 brew "nvm"
 # Draw UML diagrams
 brew "plantuml"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Python package management tool
 brew "poetry"
-# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
-brew "prettier"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Library for loading images as SDL surfaces and textures
@@ -133,8 +131,6 @@ cask "discord"
 cask "docker"
 # Developer platform
 cask "dotnet-sdk"
-# Reference manager
-cask "endnote"
 # Collaborative team software
 cask "figma"
 # Web browser
@@ -149,8 +145,6 @@ cask "gimp"
 cask "google-chrome"
 # Free and open-source media player
 cask "iina"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Open-source keystroke visualizer
 cask "keycastr"
 # Controls and monitors all fans on Apple computers
@@ -167,8 +161,6 @@ cask "onyx"
 cask "openemu"
 # Collaboration platform for API development
 cask "postman"
-# IDE for professional Python development
-cask "pycharm"
 # Web browser environment to carry out e-assessments safely
 cask "safe-exam-browser"
 # Screenshot measurement and annotation tool
