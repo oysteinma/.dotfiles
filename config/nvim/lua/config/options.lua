@@ -15,9 +15,8 @@ opt.smartindent = true
 
 opt.clipboard = "unnamedplus"
 opt.fillchars:append("eob: ")
-opt.completeopt = ""
+opt.completeopt = "menu,menuone,noinsert,noselect"
 opt.confirm = true
-opt.formatoptions = "jcroqlnt"
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
 opt.ignorecase = true
@@ -49,7 +48,7 @@ opt.termguicolors = true
 opt.timeoutlen = 300
 opt.undofile = true
 opt.undolevels = 10000
-opt.wildmode = "longest:full,full"
+opt.wildmode = ""
 opt.winminwidth = 5
 opt.wrap = false
 opt.conceallevel = 0

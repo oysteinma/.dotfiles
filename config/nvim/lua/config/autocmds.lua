@@ -14,7 +14,7 @@ vim.g.gitblame_message_template = "<author> <date>"
 vim.g.gitblame_message_when_not_committed = ""
 vim.g.gitblame_date_format = "%a %d %b %y"
 
--- Round border for nvim-tree
+-- Rounded borders for line diagnostics
 vim.diagnostic.config({
 	float = { border = "rounded" },
 })
@@ -26,6 +26,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		client.server_capabilities.semanticTokensProvider = nil
 	end,
 })
+
+-- Remove annoying new comment line
+vim.cmd("au BufWinEnter * set formatoptions-=o")
 
 -- Fugitive
 vim.api.nvim_create_autocmd("BufWinEnter", {

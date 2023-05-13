@@ -1,5 +1,5 @@
 -- Netrw
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open netrw" })
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "Open netrw" })
 
 -- Move lines when in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

@@ -21,13 +21,13 @@ require("lazy").setup({
 		{ import = "lazyvim.plugins.extras.formatting.prettier" },
 		{ import = "lazyvim.plugins.extras.linting.eslint" },
 		{ import = "lazyvim.plugins.extras.lang.json" },
+		{ import = "lazyvim.plugins.extras.coding.copilot" },
 		{ import = "plugins" },
 	},
 	defaults = {
 		lazy = false,
 		version = false,
 	},
-	install = { colorscheme = { "tokyonight" } },
 	ui = {
 		size = { width = 0.8, height = 0.8 },
 		wrap = true,
