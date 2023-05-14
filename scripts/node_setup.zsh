@@ -10,11 +10,11 @@ else
   nvm install "lts/*" --reinstall-packages-from="$(nvm current)"
 fi
 
-echo 'Install Global NPM Packages'
+echo "\n<<< Installing Global NPM Packages... >>>\n"
 npm install -g neovim
 npm install -g yarn
 
-echo "Global NPM Packages Installed:"
+echo "\n<<< Global NPM Packages Installed >>>\n"
 npm list -g --depth=0
 
 echo "\n<<< Node Setup Complete >>>\n"

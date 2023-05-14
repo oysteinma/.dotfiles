@@ -9,7 +9,7 @@ else
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-echo 'Running brew bundle'
+echo '\n<<< Running brew bundle >>>\n'
 brew bundle --file=~/.dotfiles/brew/Brewfile --verbose
 
 echo '\n<<< Homebrew Setup Complete >>>\n'
