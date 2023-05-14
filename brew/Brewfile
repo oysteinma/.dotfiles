@@ -161,8 +161,6 @@ cask "onyx"
 cask "openemu"
 # Collaboration platform for API development
 cask "postman"
-# Web browser environment to carry out e-assessments safely
-cask "safe-exam-browser"
 # Screenshot measurement and annotation tool
 cask "shottr"
 # Team communication and collaboration software
