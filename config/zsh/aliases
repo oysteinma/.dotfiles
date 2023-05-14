@@ -12,6 +12,7 @@ alias c='clear'
 alias yank='pbcopy'
 alias rm='trash'
 alias bbd='brew bundle dump --force --describe'
+alias killpretty="ps -ax | grep prettierd | awk '{print $1}' | xargs kill"
 
 # Creating directories
 function take {
