@@ -1,8 +1,6 @@
 dialect = "uk"
 
-## possible values: auto, full, compact
 style = "auto"
 
-## set it to 0 to always go full screen
 inline_height = 13
 

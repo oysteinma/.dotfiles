@@ -10,23 +10,19 @@ sudo -v
 echo "\n<<< Keep Alive >>>\n"
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-echo "\n<<< Running osascripts >>>\n"
-
 osascript -e 'tell application "System Preferences" to quit'
 
-echo "Setting wallpaper"
-# wallpaper="wallpaper.jpg"
-wallpaper="wallpaper2.png"
-osascript -e "tell application \"Finder\" to set desktop picture to \"${HOME}/.dotfiles/images/${wallpaper}\" as POSIX file"
+# GENERAL SETTINGS
 
 echo "\n<<< General Settings >>>\n"
 
 echo "Disable the sound effects on boot"
 sudo nvram SystemAudioVolume=" "
 
-echo "Bottom left screen corner → Show Desktop"
-defaults write com.apple.dock wvous-bl-corner -int 4
-defaults write com.apple.dock wvous-bl-modifier -int 0
+echo "Setting wallpaper"
+# wallpaper="wallpaper.jpg"
+wallpaper="wallpaper2.png"
+osascript -e "tell application \"Finder\" to set desktop picture to \"${HOME}/.dotfiles/images/${wallpaper}\" as POSIX file"
 
 # FINDER
 
@@ -96,6 +92,10 @@ defaults write com.apple.dock autohide-time-modifier -int 0
 
 echo "Latency when dragging windows to the edge of the screen"
 defaults write com.apple.dock workspaces-edge-delay -float 60
+
+echo "Bottom left hot screen corner → Show Desktop"
+defaults write com.apple.dock wvous-bl-corner -int 4
+defaults write com.apple.dock wvous-bl-modifier -int 0
 
 killall Finder
 killall Dock
