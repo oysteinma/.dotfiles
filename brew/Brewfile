@@ -13,6 +13,10 @@ brew "bat"
 brew "cairo"
 # Console Matrix
 brew "cmatrix"
+# Graphics library to dynamically manipulate images
+brew "gd"
+# Dependency Manager for PHP
+brew "composer"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -27,8 +31,6 @@ brew "sdl2"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Graphics library to dynamically manipulate images
-brew "gd"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # Distributed revision control system
@@ -53,10 +55,14 @@ brew "httpie"
 brew "hydra"
 # Featureful UNIX password cracker
 brew "john"
+# Fast, Dynamic Programming Language
+brew "julia"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Powerful, lightweight programming language
 brew "lua"
+# Package manager for the Lua programming language
+brew "luarocks"
 # Mac App Store command-line interface
 brew "mas"
 # Development kit for the Java programming language
@@ -77,6 +83,8 @@ brew "nvm"
 brew "plantuml"
 # Python package management tool
 brew "poetry"
+# Object-relational database system
+brew "postgresql@14"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Library for loading images as SDL surfaces and textures
