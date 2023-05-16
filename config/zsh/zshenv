@@ -9,10 +9,11 @@ export PATH="$PATH:/Users/oysteinm/Tools/flutter/bin"
 
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 
-export KEYTIMEOUT=1
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
-function exists() {
+export KEYTIMEOUT=1
+
+export function exists() {
     command -v $1 >/dev/null 2>&1
 }
+
