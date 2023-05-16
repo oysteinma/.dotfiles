@@ -17,3 +17,8 @@ export function exists() {
     command -v $1 >/dev/null 2>&1
 }
 
+export function take() {
+  mkdir -p $1
+  cd $1
+}
+

@@ -1,25 +1,18 @@
-
-alias python='python3'
 alias vim='nvim'
-alias s='source ~/.zshrc'
-
-alias ls='exa --header --git --icons --oneline --group-directories-first --long --no-permissions --time-style=long-iso --no-user --no-filesize --color=always'
+alias python='python3'
+alias ls='exa --header --git --icons --oneline --group-directories-first \
+              --long --no-permissions --time-style=long-iso --no-user \
+              --no-filesize --color=always'
 alias sl='ls'
 alias lsa='ls -la'
 alias cat='bat'
 alias grep='rg'
 alias c='clear'
+alias s='source ~/.zshrc'
 alias yank='pbcopy'
 alias rm='trash'
 alias bbd='brew bundle dump --force --describe'
 alias killpretty="ps -ax | grep prettierd | awk '{print $1}' | xargs kill"
-alias notes='icloud && cd Notes && vim notes.md'
-
-# Creating directories
-function take {
-  mkdir -p $1
-  cd $1
-}
 
 alias ga='git add'
 alias gc='git commit'
@@ -33,5 +26,6 @@ alias gauth='git shortlog -sne --pretty="%an %ae%n%cn %ce" | sort -r'
 alias glog="git log"
 
 alias yt='yt-dlp -f bestvideo+bestaudio'
+alias notes='icloud && cd Notes && vim notes.md'
 alias speedtest='speedtest-cli'
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
