@@ -6,8 +6,9 @@ if exists node; then
   echo "Node already installed!"
 else
   echo "Installing Node & NPM with NVM..."
-  source ~/.nvm/nvm.sh
-  nvm install "lts/*" --reinstall-packages-from="$(nvm current)"
+  mkdir ~/.nvm
+  source ~/.zshrc
+  nvm install node
 fi
 
 echo "\n<<< Installing Global NPM Packages... >>>\n"
