@@ -45,7 +45,6 @@ return {
 							return require("cmp").lsp.CompletionItemKind.Text ~= entry:get_kind()
 						end,
 					},
-					-- { name = "luasnip" },
 					{ name = "path" },
 				}),
 				formatting = {
