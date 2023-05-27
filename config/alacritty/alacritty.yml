@@ -4,23 +4,16 @@ env:
   TERM: alacritty
 
 window:
-  dimensions:
-    columns: 157
-    lines: 43
-
-  position:
-    x: 40
-    y: 1100
 
   padding:
-    x: 16
+    x: 18
     y: 16
 
   dynamic_padding: false
 
-  decorations: none
+  decorations: buttonless
 
-  opacity: 1.0
+  opacity: 0.85
 
   startup_mode: Windowed
 
