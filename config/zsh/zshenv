@@ -13,6 +13,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 export KEYTIMEOUT=1
 
+export FZF_ALT_C_COMMAND="fd -t d . $HOME/Developer --exclude .git \
+                          --exclude node_modules --exclude target --maxdepth 3"
+
 export function exists() {
     command -v $1 >/dev/null 2>&1
 }

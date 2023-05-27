@@ -3,6 +3,7 @@ alias python='python3'
 alias ls='exa --header --git --icons --oneline --group-directories-first \
               --long --no-permissions --time-style=long-iso --no-user \
               --no-filesize --color=always'
+
 alias sl='ls'
 alias lsa='ls -la'
 alias cat='bat'
@@ -11,8 +12,8 @@ alias c='clear'
 alias s='source ~/.zshrc'
 alias yank='pbcopy'
 alias rm='trash'
+alias p2t='tesseract'
 alias bbd='brew bundle dump --force --describe'
-alias killpretty="ps -ax | grep prettierd | awk '{print $1}' | xargs kill"
 
 alias ga='git add'
 alias gc='git commit'
