@@ -1,7 +1,6 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
-		"nvim-treesitter/nvim-treesitter-context",
 		opts = {
 			highlight = { enable = true },
 			indent = { enable = true, disable = { "python" } },
