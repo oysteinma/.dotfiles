@@ -4,6 +4,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
+tap "koekeishiya/formulae"
 tap "mongodb/brew"
 # Improved shell history for zsh and bash
 brew "atuin"
@@ -27,6 +28,8 @@ brew "openjpeg"
 brew "leptonica"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
@@ -55,6 +58,8 @@ brew "httpie"
 brew "hydra"
 # Featureful UNIX password cracker
 brew "john"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Fast, Dynamic Programming Language
 brew "julia"
 # Simple terminal UI for git commands
@@ -79,6 +84,8 @@ brew "netcat"
 brew "nmap"
 # Manage multiple Node.js versions
 brew "nvm"
+# PAM module for reattaching to the user's GUI (Aqua) session
+brew "pam-reattach"
 # Draw UML diagrams
 brew "plantuml"
 # Python package management tool
@@ -99,6 +106,8 @@ brew "speedtest-cli"
 brew "starship"
 # User interface to the TELNET protocol
 brew "telnet"
+# Enables extra languages support for Tesseract
+brew "tesseract-lang"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -153,6 +162,8 @@ cask "gimp"
 cask "google-chrome"
 # Free and open-source media player
 cask "iina"
+# Automation software
+cask "keyboard-maestro"
 # Open-source keystroke visualizer
 cask "keycastr"
 # Controls and monitors all fans on Apple computers
