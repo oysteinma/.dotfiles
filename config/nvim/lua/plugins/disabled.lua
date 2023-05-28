@@ -4,7 +4,6 @@ return {
     { "echasnovski/mini.ai",          enabled = false },
     { "echasnovski/mini.indentscope", enabled = false },
     { "echasnovski/mini.surround",    enabled = false },
-    { "echasnovski/mini.bufremove",   enabled = false },
     { "stevearc/dressing.nvim",       enabled = false },
     { "rcarriga/nvim-notify",         enabled = false },
     { "folke/persistence.nvim",       enabled = false },
