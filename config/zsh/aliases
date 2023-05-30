@@ -14,6 +14,7 @@ alias yank='pbcopy'
 alias rm='trash'
 alias p2t='tesseract'
 alias bbd='brew bundle dump --force --describe'
+alias brewu='brew update && brew upgrade'
 
 alias ga='git add'
 alias gc='git commit'

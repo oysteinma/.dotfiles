@@ -1,6 +1,4 @@
 dialect = "uk"
-
-style = "auto"
-
+style = "compact"
+show_help = "false"
 inline_height = 13
-
