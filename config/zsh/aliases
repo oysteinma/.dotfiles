@@ -15,6 +15,7 @@ alias rm='trash'
 alias p2t='tesseract'
 alias bbd='brew bundle dump --force --describe'
 alias brewu='brew update && brew upgrade'
+alias copyalf='cp -R ~/Tools/alfred/Alfred.alfredpreferences ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Tools/alfred/'
 
 alias ga='git add'
 alias gc='git commit'
@@ -23,8 +24,8 @@ alias gpull='git pull'
 alias gpush='git push'
 alias gclone='git clone'
 alias gco='git checkout'
-alias ggraph='git log --all --graph --format=oneline'
-alias gauth='git shortlog -sne --pretty="%an %ae%n%cn %ce" | sort -r'
+alias ggraph='git log --graph --oneline --decorate --all'
+alias gauthors='git shortlog -sne --pretty="%an %ae%n%cn %ce" | sort -r'
 alias glog="git log"
 
 alias yt='yt-dlp -f bestvideo+bestaudio'

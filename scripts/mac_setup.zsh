@@ -21,7 +21,7 @@ sudo nvram SystemAudioVolume=" "
 
 echo "Setting wallpaper"
 # wallpaper="wallpaper.jpg"
-wallpaper="wallpaper2.png"
+wallpaper="wallpaper.png"
 osascript -e "tell application \"Finder\" to set desktop picture to \"${HOME}/.dotfiles/images/${wallpaper}\" as POSIX file"
 
 # FINDER
