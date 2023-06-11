@@ -18,7 +18,7 @@ opt.smartindent = true
 
 opt.clipboard = "unnamedplus"
 opt.fillchars:append("eob: ")
-opt.completeopt = "menu,menuone,noinsert,noselect"
+opt.completeopt = "menu,menuone,noselect"
 opt.confirm = true
 opt.grepformat = "%f:%l:%c:%m"
 opt.grepprg = "rg --vimgrep"
