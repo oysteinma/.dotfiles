@@ -16,8 +16,20 @@ return {
 			ensure_installed = {
 				"stylua",
 				"shfmt",
+        		"ruff",
 				"black",
-        "gopls",
+				"gopls",
+				"rust-analyzer",
+				"clangd",
+				"pyright",
+				"astro-language-server",
+				"css-lsp",
+				"html-lsp",
+				"json-lsp",
+				"tailwindcss-language-server",
+				"svelte-language-server",
+				"lua-language-server",
+				"jdtls",
 			},
 		},
 		---@param opts MasonSettings | {ensure_installed: string[]}
@@ -39,4 +51,21 @@ return {
 			end
 		end,
 	},
+	{
+		"jose-elias-alvarez/null-ls.nvim",
+		event = { "BufReadPre", "BufNewFile" },
+		dependencies = { "mason.nvim" },
+		opts = function()
+		local nls = require("null-ls")
+		return {
+			root_dir = require("null-ls.utils").root_pattern(".null-ls-root", ".neoconf.json", "Makefile", ".git"),
+			sources = {
+			nls.builtins.formatting.stylua,
+			nls.builtins.formatting.shfmt,
+			nls.builtins.formatting.black,
+			nls.builtins.diagnostics.ruff
+			},
+		}
+		end,
+  	}
 }

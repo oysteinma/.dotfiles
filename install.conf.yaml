@@ -30,6 +30,7 @@
 
 - shell:
     - command: ./scripts/brew_setup.zsh
+    - command: ./scripts/pip_setup.zsh
     - command: ./scripts/zsh_setup.zsh
     - command: ./scripts/node_setup.zsh
     - command: ./scripts/mac_setup.zsh

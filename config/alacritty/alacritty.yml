@@ -1,10 +1,6 @@
 live_config_reload: true
 
-env:
-  TERM: alacritty
-
 window:
-
   padding:
     x: 16
     y: 10
@@ -23,7 +19,7 @@ scrolling:
 
 font:
   normal:
-    family: "Hack Nerd Font Mono"
+    family: Hack Nerd Font
     style: Regular
 
   bold:
@@ -35,10 +31,8 @@ font:
   bold_italic:
     style: Regular
 
-  size: 19
+  size: 18
 
-  # offset.y : Line spacing
-  # offset.x : Letter spacing
   offset:
     x: 0
     y: 5

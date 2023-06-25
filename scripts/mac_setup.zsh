@@ -1,14 +1,6 @@
 #!/usr/bin/env zsh
 
-# TODO: Continue setting up macOS, even though it is tedious
-
 echo "\n<<< Starting macOS Setup >>>\n"
-
-echo "\n<<< Administrator Password >>>\n"
-sudo -v
-
-echo "\n<<< Keep Alive >>>\n"
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -20,7 +12,6 @@ echo "Disable the sound effects on boot"
 sudo nvram SystemAudioVolume=" "
 
 echo "Setting wallpaper"
-# wallpaper="wallpaper.jpg"
 wallpaper="wallpaper.png"
 osascript -e "tell application \"Finder\" to set desktop picture to \"${HOME}/.dotfiles/images/${wallpaper}\" as POSIX file"
 
@@ -76,11 +67,6 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
 
 echo "Open folders in tabs instead of new windows"
 defaults write com.apple.finder FinderSpawnTab -bool true
-
-echo "Don't show recent tags"
-defaults write com.apple.Finder ShowRecentTags -bool false
-
-# TODO: Deselect all tags, customize toolbar and sidebar
 
 # DOCK
 

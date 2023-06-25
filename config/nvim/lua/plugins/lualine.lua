@@ -1,10 +1,9 @@
-local git_blame = require("gitblame")
-
 return {
     {
         "nvim-lualine/lualine.nvim",
         event = "VeryLazy",
         opts = function()
+            local git_blame = require("gitblame")
             return {
                 options = {
                     icons_enabled = true,

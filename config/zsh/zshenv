@@ -3,9 +3,11 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"
 
+export GOPATH="$HOME/.local/share/go"
+
 export HOMEBREW_CASK_OPTS="--no-quarantine --no-binaries"
 
-export PATH="$PATH:/Users/oysteinm/Tools/flutter/bin"
+export PATH="/opt/homebrew/bin:$PATH"
 
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 

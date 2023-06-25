@@ -13,7 +13,7 @@ alias s='source ~/.zshrc'
 alias yank='pbcopy'
 alias rm='trash'
 alias p2t='tesseract'
-alias bbd='brew bundle dump --force --describe'
+alias bbd='brew bundle dump --force --describe && sed -i "" "/vscode/d" Brewfile'
 alias brewu='brew update && brew upgrade'
 alias copyalf='cp -R ~/Tools/alfred/Alfred.alfredpreferences ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Tools/alfred/'
 

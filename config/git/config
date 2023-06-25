@@ -2,7 +2,7 @@
 [user]
 	name = Øystein Martinussen
 	email = 69514063+oysteinma@users.noreply.github.com
-	signingkey = /Users/oysteinm/.ssh/id_ed25519.pub
+  	signingkey = ~/.ssh/id_ed25519.pub
 
 [gpg]
 	format = ssh
@@ -34,6 +34,7 @@
 
 [mergetool]
   keepBackup = false
+
 [mergetool "nvimdiff"]
   cmd = "nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'"
 

@@ -14,4 +14,5 @@ return {
     { "tpope/vim-repeat",             enabled = false },
     { "RRethy/vim-illuminate",        enabled = false },
     { "echasnovski/mini.pairs",       enabled = false },
+    { "lewis6991/gitsigns.nvim",      enabled = false },
 }
