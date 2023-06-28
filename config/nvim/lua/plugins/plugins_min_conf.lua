@@ -1,13 +1,13 @@
 return {
 	{
 		"f-person/git-blame.nvim",
-    },
+	},
 	{
 		"tpope/vim-fugitive",
 	},
 	{
-        "ThePrimeagen/harpoon",
-    },
+		"ThePrimeagen/harpoon",
+	},
 	{
 		"christoomey/vim-tmux-navigator",
 	},
@@ -18,7 +18,7 @@ return {
 		"goolord/alpha-nvim",
 		opts = function(_, opts)
 			opts.section.buttons.val = {}
-		end
+		end,
 	},
 	{
 		"folke/which-key.nvim",
@@ -34,23 +34,23 @@ return {
 		},
 	},
 	{
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        event = "InsertEnter",
-        config = function()
-            require("copilot").setup({
-                suggestion = {
-                    auto_trigger = true,
-                    keymap = {
-                        accept = "<S-TAB>",
-                        accept_word = false,
-                        accept_line = false,
-                        dismiss = "<C-]>",
-                    },
-                },
-            })
-        end,
-    },
+		"zbirenbaum/copilot.lua",
+		cmd = "Copilot",
+		event = "InsertEnter",
+		config = function()
+			require("copilot").setup({
+				suggestion = {
+					auto_trigger = true,
+					keymap = {
+						accept = "<S-TAB>",
+						accept_word = false,
+						accept_line = false,
+						dismiss = "<C-]>",
+					},
+				},
+			})
+		end,
+	},
 	{
 		"ethanholz/nvim-lastplace",
 		config = function()
@@ -62,11 +62,11 @@ return {
 		end,
 	},
 	{
-        'Aasim-A/scrollEOF.nvim',
-        config = function()
-            require('scrollEOF').setup()
-        end,
-    },
+		"Aasim-A/scrollEOF.nvim",
+		config = function()
+			require("scrollEOF").setup()
+		end,
+	},
 	{
 		"telescope.nvim",
 		keys = {
@@ -83,11 +83,11 @@ return {
 		},
 	},
 	{
-        "L3MON4D3/LuaSnip",
-        keys = function()
-            return {}
-        end,
-    },
+		"L3MON4D3/LuaSnip",
+		keys = function()
+			return {}
+		end,
+	},
 	{
 		"neovim/nvim-lspconfig",
 		---@class PluginLspOpts
