@@ -9,7 +9,7 @@ window:
 
   decorations: buttonless
 
-  opacity: 0.85
+  opacity: 0.90
 
   startup_mode: Windowed
 
