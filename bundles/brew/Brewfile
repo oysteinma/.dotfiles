@@ -5,7 +5,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "koekeishiya/formulae"
-tap "mongodb/brew"
 # Improved shell history for zsh and bash
 brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -80,8 +79,12 @@ brew "netcat"
 brew "nmap"
 # Manage multiple Node.js versions
 brew "nvm"
+# Painless compression and decompression for your terminal
+brew "ouch"
 # PAM module for reattaching to the user's GUI (Aqua) session
 brew "pam-reattach"
+# General-purpose scripting language
+brew "php", restart_service: true
 # Draw UML diagrams
 brew "plantuml"
 # Python package management tool
@@ -124,8 +127,6 @@ brew "yarn"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# This package contains standard utilities for interacting with MongoDB.
-brew "mongodb/brew/mongodb-database-tools"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # GPU-accelerated terminal emulator
