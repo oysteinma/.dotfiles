@@ -1,9 +1,5 @@
 return {
 	{
-		"stevearc/oil.nvim",
-		opts = {},
-	},
-	{
 		"tpope/vim-fugitive",
 	},
 	{
@@ -20,6 +16,33 @@ return {
 		opts = function(_, opts)
 			opts.section.buttons.val = {}
 		end,
+	},
+	{
+		"stevearc/oil.nvim",
+		opts = {
+      use_default_keymaps = false,
+			keymaps = {
+				["g?"] = "actions.show_help",
+				["<CR>"] = "actions.select",
+				["<C-v>"] = "actions.select_vsplit",
+				["<C-i>"] = "actions.select_split",
+				["<C-t>"] = "actions.select_tab",
+				["<C-p>"] = "actions.preview",
+				["<C-c>"] = "actions.close",
+				["<C-u>"] = "actions.refresh",
+				["-"] = "actions.parent",
+				["_"] = "actions.open_cwd",
+				["`"] = "actions.cd",
+				["~"] = "actions.tcd",
+				["g."] = "actions.toggle_hidden",
+			},
+			view_options = {
+				show_hidden = true,
+				is_always_hidden = function(name)
+					return vim.startswith(name, ".DS") or vim.startswith(name, "thumbs.db")
+				end,
+			},
+		},
 	},
 	{
 		"folke/which-key.nvim",

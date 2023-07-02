@@ -1,5 +1,5 @@
 -- Oil
-vim.keymap.set("n", "<leader>e", require("oil").open, { desc = "Open parent directory" })
+vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
 
 -- Move lines when in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
