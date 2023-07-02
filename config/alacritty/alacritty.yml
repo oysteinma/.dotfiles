@@ -9,7 +9,7 @@ window:
 
   decorations: buttonless
 
-  opacity: 0.90
+  opacity: 0.85
 
   startup_mode: Windowed
 
@@ -31,7 +31,7 @@ font:
   bold_italic:
     style: Regular
 
-  size: 18
+  size: 17
 
   offset:
     x: 0
