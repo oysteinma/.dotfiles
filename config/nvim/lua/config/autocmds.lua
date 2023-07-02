@@ -13,6 +13,10 @@ vim.diagnostic.config({
 	float = { border = "rounded" },
 })
 
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = "rounded",
+})
+
 -- Disable semantic tokens for LSP
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(args)
