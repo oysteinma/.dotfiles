@@ -1,3 +1,4 @@
+tap "fsouza/prettierd"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -127,6 +128,8 @@ brew "yarn"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# prettier, on SPEED!
+brew "fsouza/prettierd/prettierd"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # GPU-accelerated terminal emulator
