@@ -1,6 +1,7 @@
 return {
 	{
-		"f-person/git-blame.nvim",
+		"stevearc/oil.nvim",
+		opts = {},
 	},
 	{
 		"tpope/vim-fugitive",

@@ -3,7 +3,6 @@ return {
 		"nvim-lualine/lualine.nvim",
 		event = "VeryLazy",
 		opts = function()
-			local git_blame = require("gitblame")
 			return {
 				options = {
 					icons_enabled = true,
@@ -11,7 +10,7 @@ return {
 					component_separators = "",
 					section_separators = "",
 					disabled_filetypes = {
-						statusline = {},
+						statusline = {''},
 						winbar = {},
 					},
 					ignore_focus = {},
@@ -33,8 +32,7 @@ return {
 					},
 					lualine_c = {},
 					lualine_x = {
-						{ git_blame.get_current_blame_text, cond = git_blame.is_blame_text_available },
-						"filetype",
+            "filetype",
 					},
 					lualine_y = { "progress" },
 					lualine_z = { "location" },

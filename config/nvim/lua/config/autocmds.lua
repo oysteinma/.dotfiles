@@ -6,13 +6,7 @@ require("lspconfig.ui.windows").default_options.border = "rounded"
 
 -- Increase time of whichkey menu
 vim.o.timeout = true
-vim.o.timeoutlen = 1500
-
--- Git Blame Config
-vim.g.gitblame_display_virtual_text = 0
-vim.g.gitblame_message_template = "<author> <date>"
-vim.g.gitblame_message_when_not_committed = ""
-vim.g.gitblame_date_format = "%a %d %b %y"
+vim.o.timeoutlen = 1750
 
 -- Rounded borders for line diagnostics
 vim.diagnostic.config({
@@ -45,7 +39,10 @@ vim.api.nvim_create_autocmd("BufWinEnter", {
 			vim.cmd.Git("push")
 		end, opts)
 
-		-- Rebase always
+		vim.keymap.set("n", "<leader>f", function()
+			vim.cmd.Git("push --force-with-lease")
+		end, opts)
+
 		vim.keymap.set("n", "<leader>P", function()
 			vim.cmd.Git("pull --rebase")
 		end, opts)
