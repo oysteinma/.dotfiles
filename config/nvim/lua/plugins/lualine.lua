@@ -6,11 +6,11 @@ return {
 			return {
 				options = {
 					icons_enabled = true,
-          theme = "auto",
+					theme = "auto",
 					component_separators = "",
 					section_separators = "",
 					disabled_filetypes = {
-						statusline = {''},
+						statusline = {},
 						winbar = {},
 					},
 					ignore_focus = {},
@@ -32,7 +32,7 @@ return {
 					},
 					lualine_c = {},
 					lualine_x = {
-            "filetype",
+						"filetype",
 					},
 					lualine_y = { "progress" },
 					lualine_z = { "location" },
@@ -41,7 +41,9 @@ return {
 					lualine_a = {},
 					lualine_b = {},
 					lualine_c = { "filename" },
-					lualine_x = {},
+					lualine_x = {
+						"filetype",
+					},
 					lualine_y = {},
 					lualine_z = {},
 				},

@@ -16,6 +16,7 @@ return {
 			ensure_installed = {
 				"stylua",
 				"shfmt",
+				"prettierd",
 				"ruff",
 				"black",
 				"gopls",
@@ -58,6 +59,7 @@ return {
 		opts = function()
 			local nls = require("null-ls")
 			return {
+				border = "single",
 				root_dir = require("null-ls.utils").root_pattern(".null-ls-root", ".neoconf.json", "Makefile", ".git"),
 				sources = {
 					nls.builtins.formatting.stylua,

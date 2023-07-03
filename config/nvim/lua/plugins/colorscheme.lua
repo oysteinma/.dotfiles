@@ -49,6 +49,7 @@ return {
 					all = {
 						NormalFloat = { bg = "NONE", fg = "NONE" },
 						WhichKeyFloat = { bg = "NONE", fg = "NONE" },
+						VertSplit = { bg = "NONE", fg = "#28394F" },
 					},
 				},
 			})

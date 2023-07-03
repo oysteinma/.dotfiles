@@ -14,7 +14,7 @@ vim.diagnostic.config({
 })
 
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-  border = "rounded",
+	border = "rounded",
 })
 
 -- Disable semantic tokens for LSP
@@ -25,8 +25,26 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
--- Remove annoying new comment line when pressing o or O in normal mode
-vim.cmd("au BufWinEnter * set formatoptions-=o")
+-- Disable comment autoinsert
+vim.api.nvim_create_autocmd("BufWinEnter", {
+	group = augroup("cancel_comment"),
+	pattern = { "*" },
+	callback = function()
+		vim.cmd("set formatoptions-=o")
+	end,
+})
+
+-- Hacky way to stop prettierd on exit if it is running
+vim.api.nvim_create_autocmd("VimLeave", {
+	group = augroup("prettierd_stop"),
+	pattern = { "*" },
+	callback = function()
+		if os.execute("pgrep -f prettierd > /dev/null") ~= 0 then
+			return
+		end
+		os.execute("pkill -f prettierd")
+	end,
+})
 
 -- Fugitive
 vim.api.nvim_create_autocmd("BufWinEnter", {
