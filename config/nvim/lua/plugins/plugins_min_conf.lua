@@ -3,13 +3,19 @@ return {
 		"tpope/vim-fugitive",
 	},
 	{
+		"tpope/vim-surround",
+	},
+	{
 		"ThePrimeagen/harpoon",
 	},
 	{
-		"christoomey/vim-tmux-navigator",
+		"mbbill/undotree",
 	},
 	{
-		"mbbill/undotree",
+		"rbong/vim-flog",
+	},
+	{
+		"christoomey/vim-tmux-navigator",
 	},
 	{
 		"goolord/alpha-nvim",
@@ -20,7 +26,7 @@ return {
 	{
 		"stevearc/oil.nvim",
 		opts = {
-      use_default_keymaps = false,
+			use_default_keymaps = false,
 			keymaps = {
 				["g?"] = "actions.show_help",
 				["<CR>"] = "actions.select",
