@@ -4,10 +4,6 @@ end
 
 require("lspconfig.ui.windows").default_options.border = "rounded"
 
--- Increase time of whichkey menu
-vim.o.timeout = true
-vim.o.timeoutlen = 1750
-
 -- Rounded borders for line diagnostics
 vim.diagnostic.config({
 	float = { border = "rounded" },

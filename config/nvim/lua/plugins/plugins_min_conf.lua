@@ -20,6 +20,17 @@ return {
 	{
 		"goolord/alpha-nvim",
 		opts = function(_, opts)
+			local logo = [[
+ ___  ___  ________  ___       ________
+|\  \|\  \|\   __  \|\  \     |\   __  \
+\ \  \\\  \ \  \|\  \ \  \    \ \  \|\  \
+ \ \   __  \ \  \\\  \ \  \    \ \   __  \
+  \ \  \ \  \ \  \\\  \ \  \____\ \  \ \  \
+   \ \__\ \__\ \_______\ \_______\ \__\ \__\
+    \|__|\|__|\|_______|\|_______|\|__|\|__|
+
+    ]]
+			opts.section.header.val = vim.split(logo, "\n", { trimempty = true })
 			opts.section.buttons.val = {}
 		end,
 	},
@@ -52,7 +63,16 @@ return {
 	},
 	{
 		"folke/which-key.nvim",
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 1750
+		end,
 		opts = {
+			plugins = {
+				marks = false,
+				registers = false,
+			},
 			window = {
 				border = "single",
 				position = "bottom",

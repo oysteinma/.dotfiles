@@ -18,7 +18,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.smartindent = true
 
-opt.clipboard = "unnamedplus"
+opt.clipboard = ""
 opt.fillchars:append("eob: ")
 opt.completeopt = "menu,menuone,noselect"
 opt.confirm = true
@@ -50,7 +50,6 @@ opt.smartcase = true
 opt.splitbelow = true
 opt.splitright = true
 opt.termguicolors = true
-opt.timeoutlen = 300
 opt.undofile = true
 opt.undolevels = 10000
 opt.wildmode = ""
